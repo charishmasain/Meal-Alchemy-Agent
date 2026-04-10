@@ -1,0 +1,17 @@
+spec_version: "0.1.0"
+name: meal-alchemy
+version: 0.1.0
+description: "An AI cooking assistant that turns leftover ingredients into quick, delicious, beginner-friendly meals."
+model:
+  preferred: claude-3-5-sonnet-20241022
+skills:
+  - ingredient-parser
+  - recipe-generator
+  - recipe-executor
+  - time-optimizer
+  - substitution-suggester
+tags:
+  - food
+  - cooking
+  - hackathon
+  - productivity
