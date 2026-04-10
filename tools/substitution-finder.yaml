@@ -1,0 +1,27 @@
+name: substitution-finder
+description: Finds simple, common substitutions for a given ingredient in a recipe.
+parameters:
+  type: object
+  properties:
+    ingredient:
+      type: string
+      description: The ingredient the user wants to substitute (e.g., "butter").
+    context:
+      type: string
+      description: Brief context of how the ingredient is being used (e.g., "for sauteing vegetables").
+  required:
+    - ingredient
+returns:
+  type: object
+  properties:
+    substitutes:
+      type: array
+      items:
+        type: object
+        properties:
+          name:
+            type: string
+            description: The substitute ingredient name.
+          note:
+            type: string
+            description: Brief note on how this substitution may affect the dish.

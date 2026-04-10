@@ -1,0 +1,42 @@
+name: recipe-search
+description: Searches for simple recipes that can be made using a given list of ingredients.
+parameters:
+  type: object
+  properties:
+    ingredients:
+      type: array
+      items:
+        type: string
+      description: A normalized list of available ingredients (e.g., ["egg", "onion", "tomato"]).
+    max_time_minutes:
+      type: integer
+      description: Maximum cooking time in minutes. Defaults to 45 if not specified.
+      default: 45
+    difficulty:
+      type: string
+      enum:
+        - beginner
+        - intermediate
+      description: The difficulty level of the recipe. Defaults to beginner.
+      default: beginner
+  required:
+    - ingredients
+returns:
+  type: array
+  items:
+    type: object
+    properties:
+      name:
+        type: string
+        description: Name of the recipe.
+      description:
+        type: string
+        description: Short description of the dish.
+      cooking_time:
+        type: string
+        description: Estimated total cooking time (e.g., "20 minutes").
+      missing_ingredients:
+        type: array
+        items:
+          type: string
+        description: Any common pantry staples not in the user's list that may still be needed.

@@ -1,0 +1,24 @@
+name: ingredient-lookup
+description: Looks up details about a specific ingredient, including common uses, storage tips, and pairing suggestions.
+parameters:
+  type: object
+  properties:
+    ingredient:
+      type: string
+      description: The name of the ingredient to look up (e.g., "egg", "spinach", "garlic").
+  required:
+    - ingredient
+returns:
+  type: object
+  properties:
+    uses:
+      type: string
+      description: Common cooking uses for the ingredient.
+    storage:
+      type: string
+      description: How to store the ingredient to keep it fresh.
+    pairings:
+      type: array
+      items:
+        type: string
+      description: A list of ingredients that pair well with it.
