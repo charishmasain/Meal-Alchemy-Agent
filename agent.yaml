@@ -3,7 +3,7 @@ name: meal-alchemy
 version: 0.1.0
 description: "An AI cooking assistant that turns leftover ingredients into quick, delicious, beginner-friendly meals."
 model:
-  preferred: claude-3-5-sonnet-20241022
+  preferred: "groq:llama-3.3-70b-versatile"
 skills:
   - ingredient-parser
   - recipe-generator
