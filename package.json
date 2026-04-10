@@ -1,0 +1,23 @@
+{
+  "name": "gitagent-meal_alchemy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charishmasain/Meal-Alchemy-Agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charishmasain/Meal-Alchemy-Agent/issues"
+  },
+  "homepage": "https://github.com/charishmasain/Meal-Alchemy-Agent#readme",
+  "dependencies": {
+    "gitclaw": "^1.3.3"
+  }
+}
